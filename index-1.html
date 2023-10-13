@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personal portfolio </title>
+    <link rel="stylesheet" href="index-2.css">
+    <script src="https://kit.fontawesome.com/c8ce1bcf02.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header"></div>
+    <div class="container">
+        <nav>
+        <img src="logo-1.png" class="logo">
+        <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">DSA Problems</a></li>
+            <li><a href="#portfolio">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+
+        </nav>
+
+        <!-- ---------------profile---------------- -->
+
+         <section id="profile">
+            <div class="pic-container">
+                <img src="backG.png" alt="">
+            </div>
+
+            <div class="text-container">
+                <p class="text-1">Hello, I'm</p>
+                <h1 class="text-2">Ravishankar Kumar</h1>
+                <p class="text-3">Frontend Developer</p> 
+
+               <div class="btn-container">
+                <!-- <a href="my-cv.pdf" download class="btnn btn-2">Download CV</a> -->
+                <button class="btnn btn-2"
+                    >
+                    Download CV
+                </button>
+                <button class="btnn btn-1" onclick="
+                    location.href = './#contact'
+                    ">
+                    Contact me
+                </button>
+            </div>
+
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/ravishankar-kumar-370956256?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+                    <i class="fa-brands fa-linkedin"></i></a>
+
+                    <a href="https://github.com/ravishankar4288?tab=repositories">
+                    <i class="fa-brands fa-square-github" ></i></i></a>
+                </div>
+
+            </div>
+        </section> 
+
+    </div>
+<!-- ---------------about------------------ -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="user.png" >
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <h3>A software development enthusiast looking for a
+                        challenging and responsible role to expand my
+                        knowledge and utilize my skills while making a
+                        significant contribution to the growth of the
+                        organization.
+                    </h3>
+                    
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skill')"> Skill</p>
+                        <p class="tab-links" onclick="opentab('education')"> Education</p>
+                        <p class="tab-links" onclick="opentab('exta')"> Extra Curricular</p>
+                        <p class="tab-links" onclick="opentab('Interest')"> Interest</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skill">
+                        <ul>
+                            <li><span>C++</span></li>
+                            <li><span>Data Structures</span></li>
+                            <li><span>Algorithms</span></li>
+                            <li><span>HTML</span></li>
+                            <li><span>CSS</span></li>
+                            <li><span>JavaScript</span></li>
+                            <li><span>Canva</span></li>
+                            <li><span>CSS</span></li>
+                            <li><span>FreeCad (Basic)</span></li>
+                            
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Bachelor in Technology</span><br>Electrical Engineering
+                                Punjab Engineering College <br>(Deemed to be
+                                university) (2021-2025)</li>
+                            <li><span>Intermediate</span><br>Narayan Sarvoday High School
+                                (2018-2019)</li>
+                            <li><span>Matriculation</span><br>Narayan Sarvoday High School
+                                (2016-2017)</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="exta">
+                        <ul>
+                            <li><span>Member of NSS (Proficiency)</span><br>(2021-Present)
+                            </li>
+                            <li><span>Key Responsibilities</span>
+                                <br> Sub-Head of Infra committee in PEC FEST
+                                <br> Joint-Head of BDC (Blood Donation Camp)
+                                <br> Teach students in ABHA
+                                <br> Volunteer in Orientation (2 times)
+                            </li>
+
+                            <li><span>App development-2</span><br>Building Android/ioS apps</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="Interest">
+                        <ul>
+                            <li><span>Teaching</span></li>
+                            <li><span>Dancing</span></li>
+                            <li><span>Gyming</span></li>
+                            <li><span>Cooking</span></li>
+                        </ul>
+                    </div>
+                                        
+                </div>
+            </div>
+        </div>
+        <!-- ---------------------services------------------ -->
+
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">DSA Problems Practice</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-dice-one"></i>
+                        <h2>LeetCode</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium accusamus illo consequuntur.</p>
+                        <a href="https://leetcode.com/ravishankarkumar370/">learn more</a>
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-dice-two"></i>
+                        <h2>Code Studio</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium accusamus illo consequuntur.</p>
+                        <a href="https://www.codingninjas.com/studio/profile/9be1069d-51ad-4ff6-b465-a5994b25ad18
+                        ">learn more</a>
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-dice-three"></i>
+                        <h2>Geeks For Geeks</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium accusamus illo consequuntur.</p>
+                        <a href="https://auth.geeksforgeeks.org/user/ravishankarkumarbt21ele/
+                        ">learn more</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- --------------------portfolio----------------- -->
+
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Projects</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="work-1.jpg" >
+                        <div class="layer">
+                            <h1>Apna online Dukan</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus deserunt beatae laborum,</p>
+                            <a href="https://github.com/ravishankar4288/Apna-Online-shop">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="work">
+                        <img src="work-2.jpg" >
+                        <div class="layer">
+                            <h1>Rock Paper Scissors</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus deserunt beatae laborum,</p>
+                            <a href="https://github.com/ravishankar4288/Rock-Paper-Scissor">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="work">
+                        <img src="work-3.jpg" >
+                        <div class="layer">
+                            <h1>Tudo list</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus deserunt beatae laborum,</p>
+                            <a href="https://github.com/ravishankar4288/Todo-list">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i></i></a>
+                        </div>
+                    </div>
+
+                </div>
+                <a href="#" class="btn"> See more</a>
+            </div>
+        </div>
+
+        <!-- ----------------------contact-------------------- -->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i> ravishankarkumar4288@gmail.com</p>
+                        <p><i class="fa-solid fa-phone-volume"></i> 8084907747</p>
+
+                        <div class="social-icons">
+                            <a href="https://m.facebook.com/">
+                                <i class="fa-brands fa-facebook"></i></a>
+
+                            <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+
+                            <a href="">
+                                <i class="fa-brands fa-instagram"></i></a>
+
+                            <a href="https://www.linkedin.com/in/ravishankar-kumar-370956256?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+
+                        <a href="my-cv.pdf" download class="btn btn2 btn3">Download CV</a>
+                    </div>
+
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="name" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message" > </textarea>
+                            <button type="submit" class="btn btn2 btn3">Submit</button>
+                        </form>
+
+                        <span id="msg"></span>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>copyright @ Ravishankar <i class="fa-solid fa-heart-pulse"></i> </p>
+            </div>
+        </div>
+
+<!-- ----------------------css for small screens--------------- -->
+
+        <script >
+            const tablinks = document.getElementsByClassName("tab-links");
+            const tabcontents =document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+
+        </script>
+
+        <script>
+            const sidemeu = document.getElementById("sidemenu");
+
+            function openmenu(){
+                sidemeu.style.right = "0px";
+            }
+
+            function closemenu(){
+                sidemeu.style.right = "-200px";
+            }
+        </script>
+
+
+
+    </div>
+</body>
+</html>
